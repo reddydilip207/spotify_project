@@ -94,7 +94,7 @@ After the data is inserted, various SQL queries can be written to explore and an
   
 #### Medium Queries
 - More complex queries involving grouping, aggregation functions
-- 
+
 #### Advanced Queries
 - Nested subqueries, window functions, CTEs, and performance optimization.
 
