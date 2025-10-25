@@ -49,6 +49,43 @@ Before diving into SQL, it’s important to understand the dataset thoroughly. T
 - `Album_type`: The type of album (e.g., single or album).
 - Various metrics such as `danceability`, `energy`, `loudness`, `tempo`, and more.
 
+Exploratory Data Analysis (EDA)
+
+```sql
+
+SELECT COUNT(*) FROM spotify;
+
+SELECT COUNT(DISTINCT Artist)
+FROM spotify;
+
+SELECT COUNT(DISTINCT Album)
+FROM spotify;
+
+SELECT DISTINCT Album_type
+FROM spotify;
+
+SELECT COUNT(DISTINCT Title) 
+FROM spotify;	
+
+SELECT DISTINCT channel
+FROM spotify;
+
+SELECT DISTINCT most_played_on
+FROM spotify;
+
+SELECT MAX(duration_min)
+FROM spotify;
+
+SELECT MIN(duration_min)
+FROM spotify;
+
+SELECT *
+FROM spotify
+WHERE duration_min =0;
+
+DELETE FROM spotify
+WHERE duration_min =0;
+```
 ### 4. Querying the Data
 After the data is inserted, various SQL queries can be written to explore and analyze the data. Queries are categorized into **Basic**, **medium**, and **advanced** levels to help progressively develop SQL proficiency.
 
@@ -56,8 +93,8 @@ After the data is inserted, various SQL queries can be written to explore and an
 - Simple data retrieval, filtering, and basic aggregations.
   
 #### Medium Queries
-- More complex queries involving grouping, aggregation functions, and joins.
-  
+- More complex queries involving grouping, aggregation functions
+- 
 #### Advanced Queries
 - Nested subqueries, window functions, CTEs, and performance optimization.
 
@@ -68,7 +105,7 @@ In advanced stages, the focus shifts to improving query performance. Some optimi
   
 ---
 
-## 13 Practice Questions
+## 15 Practice Questions
 
 ### Easy Level
 1. **Retrieve the names of all tracks that have more than 1 billion streams.**
