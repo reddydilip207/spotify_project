@@ -263,7 +263,7 @@ Here’s an updated section for your **Spotify Advanced SQL Project** README.
 
 ## Technology Stack
 - **Database**: PostgreSQL
-- **SQL Queries**: DDL, DML, Aggregations, Joins, Subqueries, Window Functions
+- **SQL Queries**: DDL, DML, Aggregations, Subqueries, Window Functions
 - **Tools**: pgAdmin 4 (or any SQL editor), PostgreSQL (via Homebrew, Docker, or direct installation)
 
 ## How to Run the Project
